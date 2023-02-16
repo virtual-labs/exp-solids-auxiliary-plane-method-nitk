@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Auxiliary views tend to make use of ________ projection.",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Orthographic projection",
+        "b": "Axonometric projection",
+        "c": "Oblique projection",
+        "d": "Isometric projection"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
-      "correctAnswer": "a",
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "The end projector of line AB is 40mm.Point A is 24mm above HP and 10mm in front of VP. Point B 46mm above HP and 46mm in front of VP. What will be the true length of the line?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "57mm",
+        "b": "37mm",
+        "c": "50mm",
+        "d": "47mm"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The front and top view sometimes are not sufficient to convey all the information regarding the object. Additional views are therefore projected on other planes known as ________.",
+      "answers": {
+        "a": "Spiral lines",
+        "b": "Parallel lines",
+        "c": "Skew lines",
+        "d": "Perpendicular lines"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Auxiliary plane are of ______ type.",
+      "answers": {
+        "a": "2",
+        "b": "6",
+        "c": "1",
+        "d": "3"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the angle between AIP and AVP ___",
+      "answers": {
+        "a": "90deg",
+        "b": "0deg",
+        "c": "180deg",
+        "d": "None of These"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
     }
   ]
 }

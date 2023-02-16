@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "An Auxiliary Vertical Plane is placed in the first quadrant with its surface perpendicular to HP and inclined at _________",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Φ to HP",
+        "b": "only Φ",
+        "c": "Φ to VP",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Auxiliary views cannot be used for the determining _______",
+      "answers": {
+        "a": "The true length of a line",
+        "b": "The point-view of a line",
+        "c": "The edge-view of a line",
+        "d": "The apparent size"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The front view and top view are sometimes not sufficient to convey all the information regarding the object. Additional views are therefore projected on other planes know as_______",
+      "answers": {
+        "a": "Auxiliary vertical plane",
+        "b": "Auxiliary inclined plane",
+        "c": "Auxiliary plane",
+        "d": "Horizontal and vertical plane"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Auxiliary views tend to make use of _________ projection",
+      "answers": {
+        "a": "Orthographic projection",
+        "b": "Axonometric projection",
+        "c": "Oblique projection",
+        "d": "Isometric projection"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "To project the auxiliary the auxiliary view, an imaginary plane, known as________",
+      "answers": {
+        "a": "Reference plane",
+        "b": "Principle plane",
+        "c": "Normal plane",
+        "d": "Inclined plane"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
