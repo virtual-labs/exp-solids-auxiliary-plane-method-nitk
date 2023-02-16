@@ -1,13 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<!-- Add CSS at the head of HTML file -->
-    <link rel="stylesheet" href="./css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineering Graphics</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script>
+        var simsubscreennum=0;
+        var temp=0;
+    </script>
 </head>
 <body>
-		<!-- Your code goes here-->
+<!--Simulation Screen start		-->
+<div id="simscreen">
 
-	<!-- Add JS at the bottom of HTML file --> 
-        <script src="./js/main.js"></script>
-</body>
-</html>
+    <!--Title of Simulation		-->
+    <div id="title"><h3>Auxiliary Plane Method-I</h3></div>
+    
+    <!--SubScreen Home	-->
+    <div class="simsubscreen" id="canvas0">
+    <h4 id="objective">Objective:</h4>
+    <p class="incanvas" style="font-size:15px;">To Apply Auxiliary Plane Method for a Pentagonal frustrum</p></br>
+    <h4 id="apparatus">Apparatus used:</h4>
+    <p class="incanvas" style="font-size:14px;">Drawing Compass, Drafter,Pencil,Ruler etc.</p>
+    <img id="compass"class="as" style="width: 100px;height: 140px; top: 220px;position: absolute;"  src="./images/compass.jpeg">
+    <img id="drafter" class="as" style="width: 280px;height: 160px; top: 270px;position: absolute;left: 200px;"  src="./images/Drafter.jpeg">
+    <img id="ruler" class="as"  style="width: 120px;height: 90px;position: absolute;top:260px;left: 530px;background-color: white;" src="./images/ruler2.png">
+    </div>
+    
+    <!--Step1	-->
+    <div class="simsubscreen" id="canvas1" style="visibility:hidden">
+    <p id="pumptext" class="steptext incanvas" style="font-size:14px;">
+        <strong id="titlestep" class="incanvas">STEP</strong>
+        <span class="circlebg" id="stepnumber">&nbsp;1&nbsp;</span> 
+        <p id="text" class="steptext incanvas" style="position: relative; left: 80px; top: 36px; font-size:14px;">Draw the front view of Pyramid</p></p>
+        <canvas id="can" class="canvases" width="700" height="500"></canvas>
+        <button type="button" class="label" id="a"><b>a</b></button>
+        <button type="button" class="label" id="b"><b><b></b>AIP</b></button>
+        <button type="button" class="label" id="c">c'(d')</button>
+    </div>
+    
+    
+    <!--next  Arrow	-->
+    <div id="nav">
+        <img id="nextButton" onclick="navNext(); " src="images/Next.png" />
+        <img id="reset" onclick="navNext(); " src="images/bluecwdull.png" />
+    </div>
+
+    
+    <div id="copyright" style="position: absolute;left:250px;top: 577px;font-family: verdana; font-size:12px"> &copy; <script>document.write( new Date().getFullYear() );</script>
+        SOLVE - The Virtual Lab @ NITK Surathkal</div>
+    <script src="./js/sample1.js"></script>
+    </body>
+    </html>
