@@ -1,1 +1,1 @@
-To draw projections of Solids using Auxiliary Plane method
+To use Auxiliary Plane Method for obtaining different views of a Pentagonal frustrum

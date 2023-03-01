@@ -1,27 +1,47 @@
+1. Clicking on the simulation tab will open the introductory page, which will give the user a list of tools used in drafting.
 
-1).Click on **“Auxiliary Plane method II”** the following window will
-open. Click on **the NEXT** button to proceed.
+<center>
 
-![](./images/image3.png)
+![Alt text](images/1.png)
 
-2). By Pressing the Button highlighted you can proceed to the next
-    step of construction.  
-    Hereby pressing 8 We proceed to Step 2.  
+</center>
 
-![](./images/image4.png)
+1. Clicking on the next button will take the user to the problem wherein a top view of a pentagonal frustum is drawn. Click on flashing ‘a’ to continue the simulator.
 
-3)  **. Here similarly by pressing NEXT we proceed to step 3.  
-    In the right-hand corner, a Reset button** ![](./images/image2.png)
-    **gets active here.**
+<center>
 
-![](./images/image1.png)
+![Alt text](images/2.png)
 
-**4). Finally, after following all the steps, we reach to the final
-projection.**
+</center>
 
-![](./images/image6.png)
+1. After clicking ‘a’ the front view will be shown.
 
-**5). At any step in between, if Reset button** ![](./images/image2.png)
-**gets clicked, the whole board resets to Step1.**
+<center>
 
-![](./images/image4.png)
+![Alt text](images/3.png)
+
+</center>
+
+1. Clicking on the flashing button c’(d’) will bring out x1 and y1 plane i.e. Auxiliary inclined plane to draw the final view.
+
+<center>
+
+![Alt text](images/4.png)
+
+</center>
+
+1. Clicking on the flashing ‘AIP’ button will show the points where the edges meet.
+
+<center>
+
+![Alt text](images/5.png)
+
+</center>
+
+1. Clicking on the flashing ‘3’ button will complete the problem.
+
+<center>
+
+![Alt text](images/6.png)
+
+</center>
