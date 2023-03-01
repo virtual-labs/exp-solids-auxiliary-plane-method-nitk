@@ -17,7 +17,8 @@ const disableClick = (id, callback) => {
 // Disable all click events
 const disableAllClick = function () {
   disableClick("c", b);
-  disableClick("b", c);
+  disableClick("b", d);
+  disableClick("d",c);
   let blinkDisable = ["c", "b"];
   for (const id of blinkDisable) {
     document.getElementById(id).style.animation = "none";
@@ -36,6 +37,7 @@ function navNext() {
   document.getElementById("a").style.visibility = "visible";
   document.getElementById("b").style.visibility = "hidden";
   document.getElementById("c").style.visibility = "hidden";
+  document.getElementById("d").style.visibility = "hidden";
   disableAllClick();
   document.getElementById("nextButton").style.animation = "none";
   document.getElementById("pumptext").style.visibility = "visible";
@@ -124,11 +126,11 @@ canvas.addEventListener('mousedown', (e) => {
   ctx.fillText("b", 245, 435);
   ctx.fillText("d", 305, 355);
   ctx.fillText("e", 235, 325);
- // ctx.fillText("1", 230, 375);
-  //ctx.fillText("3", 280, 405);
-  //ctx.fillText("2", 245, 400);
-  //ctx.fillText("4", 280, 355);
-  //ctx.fillText("5", 235, 350);
+  ctx.fillText("1", 215, 375);
+  ctx.fillText("2", 237, 410);
+  ctx.fillText("3", 280, 405);
+  ctx.fillText("4", 280, 355);
+  ctx.fillText("5", 235, 350);
   ctx.fillText("Solid lines", 590, 25);
   ctx.fillText("Projection lines", 590, 45);
 
@@ -256,7 +258,7 @@ function b() {
   // document.getElementById("b").style.animation = "glowing 1000ms infinite";
   disableClick("c", b);
   nextButtonId = "b";
-  nextFunction = c;
+  nextFunction = d;
   // enableClick("b", c);
   // glowing("b");
 }
@@ -295,14 +297,106 @@ function canvas_arrow(context, fromx, fromy, tox, toy, r) {
   context.fill();
 }
 
+function d(){
+  var cvs = document.getElementsByTagName("canvas")[0];
+  var ctx = cvs.getContext("2d");
+  document.getElementById("d").style.visibility = "visible";
+  //1
+  ctx.beginPath();
+  ctx.moveTo(500,270);
+  ctx.arc(500,270, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //2
+  ctx.beginPath();
+  ctx.moveTo(543, 273);
+  ctx.arc(543, 273, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //3
+  ctx.beginPath();
+  ctx.moveTo(529,262);
+  ctx.arc(529,262, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //4
+  ctx.beginPath();
+  ctx.moveTo(482,250.9);
+  ctx.arc(482,250.9, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //5
+  ctx.beginPath();
+  ctx.moveTo(466,254);
+  ctx.arc(466,254, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //a1
+  ctx.beginPath();
+  ctx.moveTo(472,369.1);
+  ctx.arc(472,369.1, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //b1
+  ctx.beginPath();
+  ctx.moveTo(532,372);
+  ctx.arc(532,372, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //c1
+  ctx.beginPath();
+  ctx.moveTo(503,350);
+  ctx.arc(503,350, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //d1
+  ctx.beginPath();
+  ctx.moveTo(457,338);
+  ctx.arc(457,338, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //e1
+  ctx.beginPath();
+  ctx.moveTo(426,346.1);
+  ctx.arc(426,346.1, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  ctx.fillStyle = "#0d0d0d"
+  ctx.fillStyle ="#0d0d0d";
+
+  ctx.fillText("1",485 ,280);
+  ctx.fillText("2",548,285);
+  ctx.fillText("4",485,240);
+  ctx.fillText("5",450,260);
+  ctx.fillText("a1",470,385);
+  ctx.fillText("b1",542,368);
+  ctx.fillText("c1",511,347);
+  ctx.fillText("d1",440,328);
+  ctx.fillText("e1",400,348);
+  document.getElementById("b").style.animation = "none";
+  nextButtonId = "d";
+  nextFunction = c;
+  glowing("d");
+}
+
 function c() {
   var cvs = document.getElementsByTagName("canvas")[0];
   var ctx = cvs.getContext("2d");
   //document.getElementById("d").style.visibility = "invisible";
   document.getElementById("stepnumber").innerHTML = "&nbsp;4&nbsp;";
-  document.getElementById("text").innerHTML =
-    "Draw the auxiliary Front view as given";
+  document.getElementById("text").innerHTML = "Draw the auxiliary Front view as given";
   document.getElementById("b").style.visibility = "visible";
+  document.getElementById("d").style.visibility = "invisible"
   ctx.beginPath();
   ctx.strokeStyle = "#3590ae";
   ctx.lineWidth = "2.5";
@@ -349,18 +443,77 @@ function c() {
   ctx.lineTo(457,338);
   ctx.stroke();
   ctx.closePath();
-  disableAllClick();
-
-  ctx.fillStyle ="#0d0d0d";
-  ctx.fillText("1",489,279);
-  ctx.fillText("2",548,285);
-  ctx.fillText("3",530,253);
-  ctx.fillText("4",485,240);
-  ctx.fillText("5",454,260);
-  ctx.fillText("a1",470,380);
-  ctx.fillText("b1",542,368);
-  ctx.fillText("c1",511,347);
-  ctx.fillText("d1",445,328);
-  ctx.fillText("e1",408,348);
+    //1
+    ctx.beginPath();
+    ctx.moveTo(500,270);
+    ctx.arc(500,270, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //2
+    ctx.beginPath();
+    ctx.moveTo(543, 273);
+    ctx.arc(543, 273, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //3
+    ctx.beginPath();
+    ctx.moveTo(529,262);
+    ctx.arc(529,262, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //4
+    ctx.beginPath();
+    ctx.moveTo(482,250.9);
+    ctx.arc(482,250.9, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //5
+    ctx.beginPath();
+    ctx.moveTo(466,254);
+    ctx.arc(466,254, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //a1
+    ctx.beginPath();
+    ctx.moveTo(472,369.1);
+    ctx.arc(472,369.1, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //b1
+    ctx.beginPath();
+    ctx.moveTo(532,372);
+    ctx.arc(532,372, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //c1
+    ctx.beginPath();
+    ctx.moveTo(503,350);
+    ctx.arc(503,350, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //d1
+    ctx.beginPath();
+    ctx.moveTo(457,338);
+    ctx.arc(457,338, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    //e1
+    ctx.beginPath();
+    ctx.moveTo(426,346.1);
+    ctx.arc(426,346.1, 4, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff0000";
+    ctx.fill();
+    ctx.closePath();
+    document.getElementById("d").style.animation = "none";
+    disableAllClick();
+    ctx.fillStyle ="#0d0d0d";
 }
-
