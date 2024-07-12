@@ -10,10 +10,10 @@
         "d": "Isometric projection"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (b). Each view of orthographic projection shows only one side of the object. It preserves both distances and angles, but there can be many hidden surfaces that are not clearly visible. While axonometric projection is a type of orthographic projection used for creating a pictorial drawing of an object, where the object is rotated around one or more of its axes relative to the projection plane to reveal multiple sides.",
+        "b": "Correct, the right answer is (b). Axonometric projection is a type of orthographic projection used for creating a pictorial drawing of an object, where the lines of sight are perpendicular to the plane of projection, and the object is rotated around one or more of its axes to reveal multiple sides.",
+        "c": "The right answer is (b). An oblique projection is a drawing in which the observer is considered to be at infinity, and the plane of projection is parallel to the front surface of the object. Axonometric projections are considered more realistic than oblique projections. The horizontal edges of an object in axonometric projections are parallel to each other and inclined to the plane.",
+        "d": "The right answer is (b). While isometric projections maintain the same scale on all axes, this might not always provide the most accurate representation of the object. Axonometric projections, on the other hand, can adjust the scale on different axes, allowing for a more accurate depiction of the true shape and size of the object."
       },
       "correctAnswer": "b",
       "difficulty": "beginner"
@@ -27,10 +27,10 @@
         "d": "47mm"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct, the right answer is (a). Draw the XY line. Draw two line perpendicular to XY line separated by a horizontal distance of 40 mm. Along the first line mark points a' and a 24 mm above and 10 mm below XY line. Along the second line mark b and b' 46 mm above and below XY line. Draw a reference line X1 Y1 parallel to line ab to represent the AVP. Through a and b, draw projectors to X1 Y1 line and extend it. Mark a2' such that 3-a2' = 5-a'. Similarly mark b2' such that 4-b2' = 6b'. Join a2'-b2' to obtain the true length of the line. The inclination of the line a2'-b2' with X1Y1 line is the true inclination of the line with HP. Draw X2Y2 parallel to the front view a'b' and project the auxiliary top view a1b1 in the similar manner. The inclination of the line a1-b1 with X2Y2 line is the true inclination of the line with VP. By measurement, the true length of the line is 57 mm.",
+        "b": "The right answer is (a). Draw the XY line. Draw two line perpendicular to XY line separated by a horizontal distance of 40 mm. Along the first line mark points a' and a 24 mm above and 10 mm below XY line. Along the second line mark b and b' 46 mm above and below XY line. Draw a reference line X1 Y1 parallel to line ab to represent the AVP. Through a and b, draw projectors to X1 Y1 line and extend it. Mark a2' such that 3-a2' = 5-a'. Similarly mark b2' such that 4-b2' = 6b'. Join a2'-b2' to obtain the true length of the line. The inclination of the line a2'-b2' with X1Y1 line is the true inclination of the line with HP. Draw X2Y2 parallel to the front view a'b' and project the auxiliary top view a1b1 in the similar manner. The inclination of the line a1-b1 with X2Y2 line is the true inclination of the line with VP. By measurement, the true length of the line is 57 mm.",
+        "c": "The right answer is (a). Draw the XY line. Draw two line perpendicular to XY line separated by a horizontal distance of 40 mm. Along the first line mark points a' and a 24 mm above and 10 mm below XY line. Along the second line mark b and b' 46 mm above and below XY line. Draw a reference line X1 Y1 parallel to line ab to represent the AVP. Through a and b, draw projectors to X1 Y1 line and extend it. Mark a2' such that 3-a2' = 5-a'. Similarly mark b2' such that 4-b2' = 6b'. Join a2'-b2' to obtain the true length of the line. The inclination of the line a2'-b2' with X1Y1 line is the true inclination of the line with HP. Draw X2Y2 parallel to the front view a'b' and project the auxiliary top view a1b1 in the similar manner. The inclination of the line a1-b1 with X2Y2 line is the true inclination of the line with VP. By measurement, the true length of the line is 57 mm.",
+        "d": "The right answer is (a). Draw the XY line. Draw two line perpendicular to XY line separated by a horizontal distance of 40 mm. Along the first line mark points a' and a 24 mm above and 10 mm below XY line. Along the second line mark b and b' 46 mm above and below XY line. Draw a reference line X1 Y1 parallel to line ab to represent the AVP. Through a and b, draw projectors to X1 Y1 line and extend it. Mark a2' such that 3-a2' = 5-a'. Similarly mark b2' such that 4-b2' = 6b'. Join a2'-b2' to obtain the true length of the line. The inclination of the line a2'-b2' with X1Y1 line is the true inclination of the line with HP. Draw X2Y2 parallel to the front view a'b' and project the auxiliary top view a1b1 in the similar manner. The inclination of the line a1-b1 with X2Y2 line is the true inclination of the line with VP. By measurement, the true length of the line is 57 mm."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -44,10 +44,10 @@
         "d": "Perpendicular lines"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "The right answer is (c). A spiral line refers to a curve which emanates from a point, moving farther away as it revolves around the point. It is a subtype of whorled patterns, a broad group that also includes concentric objects. ",
+        "b": "The right answer is (c). Parallel lines are two or more lines that are always the same distance apart and never intersect, even if they are extended infinitely in both directions. They are always equidistant and run in the same direction, which means they have the same slope.",
+        "c": "Correct, the right answer is (c). Non-parallel and non-intersecting lines are called skew lines. Skew lines exist only in three-dimensional or higher-dimensional space. They are neither parallel nor intersecting, meaning they do not lie in the same plane. This is in contrast to parallel lines, which never intersect no matter how far they are extended, and intersecting lines, which meet at a common point.",
+        "d": "The right answer is (c). Perpendicular lines are two lines that intersect each other at a right angle, which is 90 degrees. This property of lines is known as perpendicularity."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
@@ -61,10 +61,10 @@
         "d": "3"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct, the right answer is (a). There are 2 main types of auxiliary plane: 1) Auxiliary vertical plane 2) Auxiliary inclined plane.",
+        "b": "The right answer is (a). There are 2 main types of auxiliary plane: 1) Auxiliary vertical plane 2) Auxiliary inclined plane.",
+        "c": "The right answer is (a). There are 2 main types of auxiliary plane: 1) Auxiliary vertical plane 2) Auxiliary inclined plane.",
+        "d": "The right answer is (a). There are 2 main types of auxiliary plane: 1) Auxiliary vertical plane 2) Auxiliary inclined plane."
       },
       "correctAnswer": "a",
       "difficulty": "intermediate"
@@ -78,10 +78,10 @@
         "d": "None of These"
       },
       "explanations": {
-        "a": "",
-        "b": "",
-        "c": "",
-        "d": ""
+        "a": "Correct, the right answer is (a). An AVP is perpendicular to HP. So, the angle is 90 deg.",
+        "b": "The right answer is (a). An AVP is perpendicular to HP. So, the angle is 90 deg and it cannot be 180 deg.",
+        "c": "The right answer is (a). An AVP is perpendicular to HP. So, the angle is 90 deg and it cannot be 0 deg.",
+        "d": "The right answer is (a). An AVP is perpendicular to HP. So, the angle is 90 deg and it cannot be any angle."
       },
       "correctAnswer": "d",
       "difficulty": "advanced"

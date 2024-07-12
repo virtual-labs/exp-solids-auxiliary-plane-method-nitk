@@ -1,23 +1,21 @@
-1. Clicking on the simulation tab will open the introductory page, which will give the user a list of tools used in drafting.
+### Procedure
 
-![Alt text](images/1.png)
+<div style="text-align:left">
+  Click on the Objective icon <img src="images/objecticon.png" alt="Alt text" style="height:80px; width:80px;">  to view the objective of the simulation. 
 
-1. Clicking on the next button will take the user to the problem wherein a top view of a pentagonal frustum is drawn. Click on flashing ‘a’ to continue the simulator.
+   ![Alt text](images/objectscreen.png)
+   
+   Click on the Apparatus icon <img src="images/apparatus-icon.png" alt="Alt text" style="height:80px; width:80px;">  to check the tools required for this simulation.
 
-![Alt text](images/2.png)
+   ![Alt text](images/appratus_screen.png)
 
-1. After clicking ‘a’ the front view will be shown.
+  Click on the Solution icon <img src="images/solutions-icon.png" alt="Alt text" style="height:80px; width:80px;"> to proceed with further simulation steps.
 
-![Alt text](images/3.png)
+  ![Alt text](images/solution_screen.png)
 
-1. Clicking on the flashing button c’(d’) will bring out x1 and y1 plane i.e. Auxiliary inclined plane to draw the final view.
+   Evaluate and choose the correct answer to proceed with further steps, click on the next button <img src="images/nextButton-icon.png" alt="Alt text" style="height:80px; width:80px;">
 
-![Alt text](images/4.png)
 
-1. Clicking on the flashing ‘AIP’ button will show the points where the edges meet.
+   After performing the experiment, click on the Reset button <img src="images/resetButton-icon.png" alt="Alt text" style="height:80px; width:80px;"> to restart the experiment.
 
-![Alt text](images/5.png)
-
-1. Clicking on the flashing ‘3’ button will complete the problem.
-
-![Alt text](images/6.png)
+</div>
