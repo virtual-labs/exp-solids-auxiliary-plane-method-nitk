@@ -312,8 +312,8 @@ function nextQuestion() {
       btnNext.classList.remove("blink");
     } else {
       currentStepCount += 1;
-      btnNext.removeAttribute("disabled");
-      btnNext.classList.add("blink");
+      // btnNext.removeAttribute("disabled");
+      // btnNext.classList.add("blink");
     }
   }
 }
@@ -338,6 +338,9 @@ function nameVPHP() {
   ctx.fillText("VP", 69, 270);
   btnVPHP.classList.add("hide");
   nextQuestion();
+  // setTimeout(function() {
+    btnNext.removeAttribute("disabled");
+// }, 2000);
 }
 
 function drawLine(x1, y1, x2, y2, ratio) {
@@ -417,6 +420,8 @@ function checkAnswer(ele, index, answer, buttonClass, circle) {
   optionSelected.classList.remove("wrong");
   optionSelected.classList.remove("correct");
   if (index === answer) {
+    buttonClass.classList.add("anim");
+    buttonClass.classList.remove("hide");
     optionSelected.classList.add("correct");
     validateAnswer.innerHTML = "Right answer👍";
     answersDiv.appendChild(validateAnswer);
@@ -431,8 +436,10 @@ function checkAnswer(ele, index, answer, buttonClass, circle) {
   } else {
     clearCircle();
     optionSelected.classList.add("wrong");
+    buttonClass.classList.add("anim");
+    buttonClass.classList.remove("hide");
     if (buttonClass != null) buttonClass.classList.add("hide");
-    validateAnswer.innerHTML = "Worng answer, please check the options again👎";
+    validateAnswer.innerHTML = "Wrong answer, please check the options again👎";
     answersDiv.appendChild(validateAnswer);
   }
 }
@@ -589,6 +596,9 @@ function a() {
   btnaDash.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
+  setTimeout(function() {
+    btnNext.removeAttribute("disabled");
+}, 2000);
 }
 
 function b() {
@@ -802,6 +812,9 @@ function b11() {
   btnbOneDash.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
+  // setTimeout(function() {
+    btnNext.removeAttribute("disabled");
+// }, 2000);
 }
 
 function b1() {
@@ -833,6 +846,9 @@ function b1() {
   btnThetaOne.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
+  setTimeout(function() {
+    btnNext.removeAttribute("disabled");
+}, 1000);
 }
 
 function bb() {
