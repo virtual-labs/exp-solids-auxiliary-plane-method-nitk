@@ -13,17 +13,11 @@ let data = [
         func: null,
       },
       {
-        question: "On the grid sheet, what is the correct way to abbreviate Figures?",
-        options: [
-          "fig",
-          "fig.",
-          "FIG.",
-          "FIG",
-        ],
+        question:
+          "On the grid sheet, what is the correct way to abbreviate Figures?",
+        options: ["fig", "fig.", "FIG.", "FIG"],
         answer: 3,
 
-
-       
         buttonClass: "btnVPHP",
         circle: null,
         circleText: null,
@@ -36,14 +30,8 @@ let data = [
     title: "Draw the top view as given",
     questions: [
       {
-        question:
-          "How many edges are there in the Pentagonal frustum?",
-        options: [
-          "5",
-          "9",
-          "12",
-          "15",
-        ],
+        question: "How many edges are there in the Pentagonal frustum?",
+        options: ["5", "9", "12", "15"],
         answer: 3,
         buttonClass: "btnLine",
         circle: null,
@@ -51,14 +39,8 @@ let data = [
         func: null,
       },
       {
-        question:
-          "Total no. of faces in Pentagonal Frustum",
-        options: [
-          "5",
-          "7",
-          "9",
-          "11",
-        ],
+        question: "Total no. of faces in Pentagonal Frustum",
+        options: ["5", "7", "9", "11"],
         answer: 1,
         buttonClass: "btnaDash",
         circle: null,
@@ -86,7 +68,6 @@ let data = [
         circleText: null,
         func: b1,
       },
-      
     ],
   },
   {
@@ -94,8 +75,7 @@ let data = [
     title: "Draw the AIP as given",
     questions: [
       {
-        question:
-          "Full form of AIP?",
+        question: "Full form of AIP?",
         options: [
           "Auxiliary Incident Plane",
           "Automatic Inclined Plane",
@@ -109,10 +89,9 @@ let data = [
         func: b,
       },
       {
-        question:
-        "No of vertices in Pentagonal Frustum",
-      options: ["5", "10", "15", "20"],
-      answer: 1,
+        question: "No of vertices in Pentagonal Frustum",
+        options: ["5", "10", "15", "20"],
+        answer: 1,
         buttonClass: "btnbOneDash",
         circle: null,
         circleText: null,
@@ -334,13 +313,13 @@ function nameAxis() {
 }
 
 function nameVPHP() {
-  ctx.fillText("HP", 69, 243);
-  ctx.fillText("VP", 69, 270);
+  ctx.fillText("VP", 69, 243);
+  ctx.fillText("HP", 69, 270);
   btnVPHP.classList.add("hide");
   nextQuestion();
   // setTimeout(function() {
-    btnNext.removeAttribute("disabled");
-// }, 2000);
+  btnNext.removeAttribute("disabled");
+  // }, 2000);
 }
 
 function drawLine(x1, y1, x2, y2, ratio) {
@@ -484,48 +463,48 @@ function drawInitialLine() {
   // ctx.stroke();
   ctx.beginPath();
   ctx.strokeStyle = "#3590ae";
-//outside pentagon
+  //outside pentagon
   ctx.moveTo(250, 405);
   ctx.lineTo(250, 345);
   ctx.stroke();
   ctx.lineTo(195, 330);
   ctx.stroke();
-  ctx.lineTo(150,375);
+  ctx.lineTo(150, 375);
   ctx.stroke();
-  ctx.lineTo(195,420 );
+  ctx.lineTo(195, 420);
   ctx.stroke();
   ctx.lineTo(250, 405);
   ctx.stroke();
-//inner penta
+  //inner penta
   ctx.moveTo(230, 390);
   ctx.lineTo(230, 360);
   ctx.stroke();
   ctx.lineTo(200, 350);
   ctx.stroke();
-  ctx.lineTo(175,375);
+  ctx.lineTo(175, 375);
   ctx.stroke();
-  ctx.lineTo(200,400);
+  ctx.lineTo(200, 400);
   ctx.stroke();
   ctx.lineTo(230, 390);
   ctx.stroke();
   //joining lines
-  ctx.moveTo(250,405);
+  ctx.moveTo(250, 405);
   ctx.lineTo(230, 390);
   ctx.stroke();
-  ctx.moveTo(250,345);
+  ctx.moveTo(250, 345);
   ctx.lineTo(230, 360);
   ctx.stroke();
-  ctx.moveTo(195,330);
+  ctx.moveTo(195, 330);
   ctx.lineTo(200, 350);
   ctx.stroke();
-  ctx.moveTo(150,375);
+  ctx.moveTo(150, 375);
   ctx.lineTo(175, 375);
   ctx.stroke();
-  ctx.moveTo(195,420);
+  ctx.moveTo(195, 420);
   ctx.lineTo(200, 400);
   ctx.stroke();
   ctx.closePath();
-  
+
   ctx.font = "bold 15px comic sans MS";
   // ctx.fillText("X", 10, 305);
   // ctx.fillText("VP", 40, 290);
@@ -567,11 +546,11 @@ function a() {
   ctx.strokeStyle = "#3590ae";
   ctx.moveTo(250, 250);
   ctx.lineTo(150, 250);
-  ctx.lineTo(175,150);
-  ctx.lineTo(230,150);
-  ctx.lineTo(250,250)
-  ctx.moveTo(200,150);
-  ctx.lineTo(195,250);
+  ctx.lineTo(175, 150);
+  ctx.lineTo(230, 150);
+  ctx.lineTo(250, 250);
+  ctx.moveTo(200, 150);
+  ctx.lineTo(195, 250);
   ctx.stroke();
   ctx.closePath();
   ctx.beginPath();
@@ -581,7 +560,7 @@ function a() {
   ctx.fillText("a'", 150, 245);
   ctx.fillText("b'(e')", 195, 245);
   ctx.fillText("c'(d')", 255, 225);
-  ctx.fillText("1'",160, 145);
+  ctx.fillText("1'", 160, 145);
   ctx.fillText("2'(5')", 180, 145);
   ctx.fillText("3'(4')", 225, 145);
   animate(250, 345, 250, 250, 0);
@@ -596,16 +575,16 @@ function a() {
   btnaDash.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
-  setTimeout(function() {
+  setTimeout(function () {
     btnNext.removeAttribute("disabled");
-}, 2000);
+  }, 2000);
 }
 
 function b() {
   clearCircle();
   ctx.beginPath();
-  ctx.moveTo(500,270);
-  ctx.arc(500,270, 4, 0, 2 * Math.PI);
+  ctx.moveTo(500, 270);
+  ctx.arc(500, 270, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
@@ -618,74 +597,74 @@ function b() {
   ctx.closePath();
   //3
   ctx.beginPath();
-  ctx.moveTo(529,262);
-  ctx.arc(529,260, 4, 0, 2 * Math.PI);
+  ctx.moveTo(529, 262);
+  ctx.arc(529, 260, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //4
   ctx.beginPath();
-  ctx.moveTo(482,250.9);
-  ctx.arc(492,246.9, 4, 0, 2 * Math.PI);
+  ctx.moveTo(482, 250.9);
+  ctx.arc(492, 246.9, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //5
   ctx.beginPath();
-  ctx.moveTo(466,254);
-  ctx.arc(466,247, 4, 0, 2 * Math.PI);
+  ctx.moveTo(466, 254);
+  ctx.arc(466, 247, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //a1
   ctx.beginPath();
-  ctx.moveTo(472,369.1);
-  ctx.arc(472,369.1, 4, 0, 2 * Math.PI);
+  ctx.moveTo(472, 369.1);
+  ctx.arc(472, 369.1, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //b1
   ctx.beginPath();
-  ctx.moveTo(532,372);
-  ctx.arc(532,372, 4, 0, 2 * Math.PI);
+  ctx.moveTo(532, 372);
+  ctx.arc(532, 372, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //c1
   ctx.beginPath();
-  ctx.moveTo(503,350);
-  ctx.arc(503,350, 4, 0, 2 * Math.PI);
+  ctx.moveTo(503, 350);
+  ctx.arc(503, 350, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //d1
   ctx.beginPath();
-  ctx.moveTo(457,338);
-  ctx.arc(457,333, 4, 0, 2 * Math.PI);
+  ctx.moveTo(457, 338);
+  ctx.arc(457, 333, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
   //e1
   ctx.beginPath();
-  ctx.moveTo(426,346.1);
-  ctx.arc(426,336.1, 4, 0, 2 * Math.PI);
+  ctx.moveTo(426, 346.1);
+  ctx.arc(426, 336.1, 4, 0, 2 * Math.PI);
   ctx.fillStyle = "#ff0000";
   ctx.fill();
   ctx.closePath();
-  ctx.fillStyle = "#0d0d0d"
-  ctx.fillStyle ="#0d0d0d";
+  ctx.fillStyle = "#0d0d0d";
+  ctx.fillStyle = "#0d0d0d";
 
-  ctx.fillText("1",485 ,280);
-  ctx.fillText("2",548,285);
-  ctx.fillText("4",485,240);
-  ctx.fillText("5",450,260);
-  ctx.fillText("a1",470,385);
-  ctx.fillText("b1",542,368);
-  ctx.fillText("c1",511,347);
-  ctx.fillText("d1",440,328);
-  ctx.fillText("e1",400,348);
+  ctx.fillText("1", 485, 280);
+  ctx.fillText("2", 548, 285);
+  ctx.fillText("4", 485, 240);
+  ctx.fillText("5", 450, 260);
+  ctx.fillText("a1", 470, 385);
+  ctx.fillText("b1", 542, 368);
+  ctx.fillText("c1", 511, 347);
+  ctx.fillText("d1", 440, 328);
+  ctx.fillText("e1", 400, 348);
   ctx.closePath();
- 
+
   btna.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
@@ -696,25 +675,25 @@ function b11() {
   ctx.beginPath();
   ctx.strokeStyle = "#3590ae";
   ctx.lineWidth = "2.5";
-  ctx.moveTo(543,273);
-  ctx.lineTo(532,372);
-  ctx.lineTo(472,365.1); 
-  ctx.lineTo(426,339.1);
-  ctx.lineTo(466,250);
-  ctx.lineTo(492,246.9);
-  ctx.lineTo(529,262); 
-  ctx.lineTo(543,273); 
-  ctx.lineTo(500,270); 
-  ctx.lineTo(466,250); 
+  ctx.moveTo(543, 273);
+  ctx.lineTo(532, 372);
+  ctx.lineTo(472, 365.1);
+  ctx.lineTo(426, 339.1);
+  ctx.lineTo(466, 250);
+  ctx.lineTo(492, 246.9);
+  ctx.lineTo(529, 262);
+  ctx.lineTo(543, 273);
+  ctx.lineTo(500, 270);
+  ctx.lineTo(466, 250);
   ctx.stroke();
   ctx.closePath();
   ctx.beginPath();
-  ctx.moveTo(472,369.1);
-  ctx.lineTo(500,270);
+  ctx.moveTo(472, 369.1);
+  ctx.lineTo(500, 270);
   ctx.stroke();
   ctx.closePath();
   ctx.font = "bold 15px comic sans MS";
-  ctx.fillText("Invisible line",590,65);
+  ctx.fillText("Invisible line", 590, 65);
   ctx.beginPath();
   ctx.moveTo(575, 60);
   ctx.arc(575, 60, 7, 0, 2 * Math.PI);
@@ -723,106 +702,106 @@ function b11() {
   ctx.closePath();
 
   ctx.strokeStyle = "#f89dfc";
-  ctx.moveTo(426,340.1);
-  ctx.lineTo(457,334);
-  ctx.lineTo(503,350);
-  ctx.lineTo(532,372);
+  ctx.moveTo(426, 340.1);
+  ctx.lineTo(457, 334);
+  ctx.lineTo(503, 350);
+  ctx.lineTo(532, 372);
   ctx.stroke();
   ctx.closePath();
   ctx.beginPath();
-  ctx.moveTo(529,262);
-  ctx.lineTo(503,350);
+  ctx.moveTo(529, 262);
+  ctx.lineTo(503, 350);
   ctx.stroke();
   ctx.closePath();
   ctx.beginPath();
-  ctx.moveTo(488,250.9);
-  ctx.lineTo(457,334);
+  ctx.moveTo(488, 250.9);
+  ctx.lineTo(457, 334);
   ctx.stroke();
   ctx.closePath();
-    //1
-    ctx.beginPath();
-    ctx.moveTo(500,270);
-    ctx.arc(500,270, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //2
-    ctx.beginPath();
-    ctx.moveTo(543, 273);
-    ctx.arc(543, 273, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //3
-    ctx.beginPath();
-    ctx.moveTo(529,262);
-    ctx.arc(529,260, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //4
-    ctx.beginPath();
-    ctx.moveTo(482,250.9);
-    ctx.arc(492,246.9, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //5
-    ctx.beginPath();
-    ctx.moveTo(466,254);
-    ctx.arc(466,247, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //a1
-    ctx.beginPath();
-    ctx.moveTo(472,369.1);
-    ctx.arc(472,369.1, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //b1
-    ctx.beginPath();
-    ctx.moveTo(532,372);
-    ctx.arc(532,372, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //c1
-    ctx.beginPath();
-    ctx.moveTo(503,350);
-    ctx.arc(503,350, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //d1
-    ctx.beginPath();
-    ctx.moveTo(457,338);
-    ctx.arc(457,333, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
-    //e1
-    ctx.beginPath();
-    ctx.moveTo(426,346.1);
-    ctx.arc(426,336.1, 4, 0, 2 * Math.PI);
-    ctx.fillStyle = "#ff0000";
-    ctx.fill();
-    ctx.closePath();
+  //1
+  ctx.beginPath();
+  ctx.moveTo(500, 270);
+  ctx.arc(500, 270, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //2
+  ctx.beginPath();
+  ctx.moveTo(543, 273);
+  ctx.arc(543, 273, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //3
+  ctx.beginPath();
+  ctx.moveTo(529, 262);
+  ctx.arc(529, 260, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //4
+  ctx.beginPath();
+  ctx.moveTo(482, 250.9);
+  ctx.arc(492, 246.9, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //5
+  ctx.beginPath();
+  ctx.moveTo(466, 254);
+  ctx.arc(466, 247, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //a1
+  ctx.beginPath();
+  ctx.moveTo(472, 369.1);
+  ctx.arc(472, 369.1, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //b1
+  ctx.beginPath();
+  ctx.moveTo(532, 372);
+  ctx.arc(532, 372, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //c1
+  ctx.beginPath();
+  ctx.moveTo(503, 350);
+  ctx.arc(503, 350, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //d1
+  ctx.beginPath();
+  ctx.moveTo(457, 338);
+  ctx.arc(457, 333, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
+  //e1
+  ctx.beginPath();
+  ctx.moveTo(426, 346.1);
+  ctx.arc(426, 336.1, 4, 0, 2 * Math.PI);
+  ctx.fillStyle = "#ff0000";
+  ctx.fill();
+  ctx.closePath();
   btnbOneDash.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
   // setTimeout(function() {
-    btnNext.removeAttribute("disabled");
-// }, 2000);
+  btnNext.removeAttribute("disabled");
+  // }, 2000);
 }
 
 function b1() {
   clearCircle();
   ctx.beginPath();
   ctx.strokeStyle = "black";
-  ctx.moveTo(395,150);
-  ctx.lineTo(327.5,420);
+  ctx.moveTo(395, 150);
+  ctx.lineTo(327.5, 420);
   ctx.stroke();
   ctx.closePath();
   ctx.beginPath();
@@ -846,9 +825,9 @@ function b1() {
   btnThetaOne.classList.add("hide");
   circle1 = new Path2D();
   nextQuestion();
-  setTimeout(function() {
+  setTimeout(function () {
     btnNext.removeAttribute("disabled");
-}, 1000);
+  }, 1000);
 }
 
 function bb() {
@@ -887,11 +866,11 @@ function bb() {
   ctx.stroke();
   ctx.fillStyle = "black";
   ctx.fillText("a₁'", 160, 210);
-  ctx.fillText("f₁'", 168 - 42+8, 245 - 15-50);
-  ctx.fillText("e₁'", 140 - 32+10, 190 - 8-50);
-  ctx.fillText("d₁'", 150 - 37+13, 160-60);
-  ctx.fillText("b₁'", 195 - 36+28, 235 - 8-50);
-  ctx.fillText("c₁'", 190 - 32+13, 180 - 8-60);
+  ctx.fillText("f₁'", 168 - 42 + 8, 245 - 15 - 50);
+  ctx.fillText("e₁'", 140 - 32 + 10, 190 - 8 - 50);
+  ctx.fillText("d₁'", 150 - 37 + 13, 160 - 60);
+  ctx.fillText("b₁'", 195 - 36 + 28, 235 - 8 - 50);
+  ctx.fillText("c₁'", 190 - 32 + 13, 180 - 8 - 60);
   ctx.closePath();
   btnB.classList.add("hide");
   circle1 = new Path2D();
@@ -961,36 +940,31 @@ function createCircle() {
   ctx.beginPath();
   if (cirText == "b1'") {
     circle1.arc(cirX, cirY, 20, 0, 2 * Math.PI);
-  } else if(cirText == "d'(e')"){
+  } else if (cirText == "d'(e')") {
     circle1.arc(cirX, cirY, 30, 0, 2 * Math.PI);
-  }  else if(cirText == "AIP"){
+  } else if (cirText == "AIP") {
     circle1.arc(cirX, cirY, 28, 0, 2 * Math.PI);
-  }
-  else if(cirText == "AVP"){
+  } else if (cirText == "AVP") {
     circle1.arc(cirX, cirY, 28, 0, 2 * Math.PI);
-  }
-  else circle1.arc(cirX, cirY, 16, 0, 2 * Math.PI);
+  } else circle1.arc(cirX, cirY, 16, 0, 2 * Math.PI);
   ctx.fillStyle = "#417472";
   ctx.fill(circle1);
   ctx.fillStyle = "#fff";
   if (cirText == "b1'") {
     ctx.fillText(cirText, cirX - 9, cirY + 5);
-  } else  if (cirText == "d'(e')") {
+  } else if (cirText == "d'(e')") {
     ctx.fillText(cirText, cirX - 12, cirY + 5);
-  } 
-  else  if (cirText == "AIP") {
+  } else if (cirText == "AIP") {
     ctx.fillText(cirText, cirX - 11, cirY + 5);
-  } 
-  else  if (cirText == "AVP") {
+  } else if (cirText == "AVP") {
     ctx.fillText(cirText, cirX - 12, cirY + 5);
-  } 
-  else ctx.fillText(cirText, cirX - 7, cirY + 5);
+  } else ctx.fillText(cirText, cirX - 7, cirY + 5);
   ctx.closePath();
 }
 // function createCircle() {
 //   console.log(cirText);
 //   ctx.beginPath();
-  
+
 //   let radius = 16; // Default radius
 //   if (cirText.length > 4) {
 //     radius = 20 + (cirText.length - 4) * 2; // Increase radius for longer text
@@ -999,14 +973,14 @@ function createCircle() {
 //   }
 
 //   circle1.arc(cirX, cirY, radius, 0, 2 * Math.PI);
-  
+
 //   ctx.fillStyle = "#417472";
 //   ctx.fill(circle1);
 //   ctx.fillStyle = "#fff";
 
 //   let textOffset = cirText.length > 2 ? cirText.length * 2 : cirText == "b1'" ? 9 : 7;
 //   ctx.fillText(cirText, cirX - textOffset-10, cirY + 5);
-  
+
 //   ctx.closePath();
 // }
 
@@ -1015,27 +989,21 @@ function clearCircle() {
     ctx.clearRect(cirX - 20, cirY - 20, 40, 40);
   } else if (cirText == "d'(e')") {
     ctx.clearRect(cirX - 30, cirY - 30, 60, 60);
-  } 
-  else if (cirText == "AIP") {
+  } else if (cirText == "AIP") {
     ctx.clearRect(cirX - 28, cirY - 28, 60, 60);
-  }
-  else if (cirText == "AVP") {
+  } else if (cirText == "AVP") {
     ctx.clearRect(cirX - 28, cirY - 28, 60, 60);
-  }
-  else ctx.clearRect(cirX - 20, cirY - 20, 37, 37);
+  } else ctx.clearRect(cirX - 20, cirY - 20, 37, 37);
   ctx.fillStyle = "#000";
   if (cirText == "b1'") {
     ctx.fillText(cirText, cirX - 9, cirY + 5);
   } else if (cirText != "d'(e')") {
     ctx.fillText(cirText, cirX - 12, cirY + 5);
-  }
-  else if (cirText != "AIP") {
+  } else if (cirText != "AIP") {
     ctx.fillText(cirText, cirX - 11, cirY + 5);
-  }
-  else if (cirText != "AVP") {
+  } else if (cirText != "AVP") {
     ctx.fillText(cirText, cirX - 12, cirY + 5);
-  }
-  else{
+  } else {
     ctx.fillText(cirText, cirX - 7, cirY + 5);
   }
 }
