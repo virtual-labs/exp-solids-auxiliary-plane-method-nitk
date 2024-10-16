@@ -38,16 +38,16 @@
     {
       "question": "The front and top view sometimes are not sufficient to convey all the information regarding the object. Additional views are therefore projected on other planes known as ________.",
       "answers": {
-        "a": "Spiral lines",
-        "b": "Parallel lines",
-        "c": "Skew lines",
-        "d": "Perpendicular lines"
+        "a": "Spiral planes",
+        "b": "Parallel planes",
+        "c": "Skew planes",
+        "d": "Perpendicular planes"
       },
       "explanations": {
-        "a": "The right answer is (c). A spiral line refers to a curve which emanates from a point, moving farther away as it revolves around the point. It is a subtype of whorled patterns, a broad group that also includes concentric objects. ",
-        "b": "The right answer is (c). Parallel lines are two or more lines that are always the same distance apart and never intersect, even if they are extended infinitely in both directions. They are always equidistant and run in the same direction, which means they have the same slope.",
-        "c": "Correct, the right answer is (c). Non-parallel and non-intersecting lines are called skew lines. Skew lines exist only in three-dimensional or higher-dimensional space. They are neither parallel nor intersecting, meaning they do not lie in the same plane. This is in contrast to parallel lines, which never intersect no matter how far they are extended, and intersecting lines, which meet at a common point.",
-        "d": "The right answer is (c). Perpendicular lines are two lines that intersect each other at a right angle, which is 90 degrees. This property of lines is known as perpendicularity."
+        "a": "The right answer is (c). A spiral plane refers to a curve which emanates from a point, moving farther away as it revolves around the point. It is a subtype of whorled patterns, a broad group that also includes concentric objects. ",
+        "b": "The right answer is (c). Parallel planes are two or more planes that are always the same distance apart and never intersect, even if they are extended infinitely in both directions. They are always equidistant and run in the same direction, which means they have the same slope.",
+        "c": "Correct, the right answer is (c). Non-parallel and non-intersecting planes are called skew planes. Skew planes exist only in three-dimensional or higher-dimensional space. They are neither parallel nor intersecting, meaning they do not lie in the same plane. This is in contrast to parallel planes, which never intersect no matter how far they are extended, and intersecting planes, which meet at a common point.",
+        "d": "The right answer is (c). Perpendicular planes are two planes that intersect each other at a right angle, which is 90 degrees. This property of planes is known as perpendicularity."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
