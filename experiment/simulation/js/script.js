@@ -1,7 +1,8 @@
 let data = [
   {
     step: 1,
-    title: "Draw the axis and name VP & HP",
+    title:
+      "Draw the horizontal line xy as the reference and mark the VP and HP.",
     questions: [
       {
         question: "The type of projection discussed here is related to",
@@ -27,7 +28,7 @@ let data = [
   },
   {
     step: 2,
-    title: "Draw the top view as given",
+    title: "Draw the top view of the solid on HP and the front view on VP.",
     questions: [
       {
         question: "How many edges are there in the Pentagonal frustum?",
@@ -51,7 +52,8 @@ let data = [
   },
   {
     step: 3,
-    title: "Draw the next corresponding view",
+    title:
+      "Draw the auxiliary inclined plane x<sub>1</sub>y<sub>1</sub> inclined at an angle θ to the horizontal plane, draw the projectors from the front view and mark the points by keeping the distance of each point from x<sub>1</sub>y<sub>1</sub> equal to its distance from xy in the top view",
     questions: [
       {
         question:
@@ -72,7 +74,7 @@ let data = [
   },
   {
     step: 4,
-    title: "Draw the AIP as given",
+    title: "Join the points to obtain the final view.",
     questions: [
       {
         question: "Full form of AIP?",
@@ -271,7 +273,7 @@ function displayDiv(ele) {
 function nextStep() {
   currentStep = data.find((step) => currentStepCount === step.step);
   stepNumber.textContent = currentStepCount;
-  stepTitle.textContent = currentStep.title;
+  stepTitle.innerHTML = currentStep.title;
   btnNext.setAttribute("disabled", true);
   btnNext.classList.remove("blink");
   initialSetup();
@@ -368,7 +370,7 @@ function animateRecursively(x1, y1, x2, y2, ratio) {
 function initialSetup() {
   currentStep = data.find((d) => d.step == currentStepCount);
   stepNumber.textContent = currentStepCount;
-  stepTitle.textContent = currentStep.title;
+  stepTitle.innerHTML = currentStep.title;
   currentQuestions = currentStep.questions;
   currentQuestionIndex = 0;
   quizDiv.classList.remove("hide");

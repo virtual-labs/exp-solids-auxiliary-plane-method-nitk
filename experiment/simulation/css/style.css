@@ -68,7 +68,7 @@ h1 {
   right: 1rem;
   bottom: 1rem;
 }
-.anim{
+.anim {
   animation: highlight 1s infinite;
 }
 .title-div h1 {
@@ -340,7 +340,7 @@ h1 {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 2rem;
-  align-items: center;
+  /* align-items: center; */
 }
 .practice-step-no {
   background-image: linear-gradient(
