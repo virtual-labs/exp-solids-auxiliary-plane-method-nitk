@@ -2,38 +2,89 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "An Auxiliary Vertical Plane is placed in the first quadrant with its surface perpendicular to HP and inclined at _________",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Φ to HP",
+        "b": "only Φ",
+        "c": "Φ to VP",
+        "d": "None of the above"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The right answer is (c). AIP is placed in the first quadrant with its surface perpendicular to VP and inclined at φ to HP.",
+        "b": "The right answer is (c). AVP is not only inclined at φ but it's inclined at VP.",
+        "c": "Correct, the right answer is (c). AVP is placed in the first quadrant with its surface perpendicular to HP and inclined at φ to VP.",
+        "d": "The right answer is (c). AVP is placed in the first quadrant with its surface perpendicular to HP and inclined at φ to VP."
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Auxiliary views cannot be used for the determining _______",
+      "answers": {
+        "a": "The true length of a line",
+        "b": "The point-view of a line",
+        "c": "The edge-view of a line",
+        "d": "The apparent size"
+      },
+      "explanations": {
+        "a": "The right answer is (d). The auxiliary views may also be used for determining true length of a line, point-view of a line, edge- view of a line, true size and form of a plane etc.",
+        "b": "The right answer is (d). The auxiliary views may also be used for determining true length of a line, point-view of a line, edge- view of a line, true size and form of a plane etc.",
+        "c": "The right answer is (d). The auxiliary views may also be used for determining true length of a line, point-view of a line, edge- view of a line, true size and form of a plane etc.",
+        "d": "Correct, the right answer is (d).The auxiliary views may also be used for determining true length of a line, point-view of a line, edge- view of a line, true size and form of a plane etc. But cannot determine the apparent size."
+      },
+      "correctAnswer": "d",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "The front view and top view are sometimes not sufficient to convey all the information regarding the object. Additional views are therefore projected on other planes know as_______",
+      "answers": {
+        "a": "Auxiliary vertical plane",
+        "b": "Auxiliary inclined plane",
+        "c": "Auxiliary plane",
+        "d": "Horizontal and vertical plane"
+      },
+      "explanations": {
+        "a": "The right answer is (c). An AVP is perpendicular to the Horizontal Plane (HP) and inclined to the Vertical Plane (VP). The view of the object projected on the AVP is called an auxiliary front view. The AVP is used when the true shape of a feature, which is perpendicular to the HP and inclined to the VP, needs to be represented.",
+        "b": "The right answer is (c). An AIP is perpendicular to the Vertical Plane (VP) and inclined to the Horizontal Plane (HP). The view of the object projected on the AIP is called an auxiliary top view. The AIP is used when the true shape of a feature, which is perpendicular to the VP and inclined to the HP, needs to be represented.",
+        "c": "Correct, the right answer is (c). Auxiliary views are used to show the true shape and size of an inclined surface, which may not be accurately represented in the front or top view. Auxiliary views can provide additional perspectives that are not possible with just the front and top views. They can help in visualizing the object more accurately and completely.",
+        "d": "The right answer is (c). HP and VP are reference plane used for drawing views."
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Auxiliary views tend to make use of _________ projection",
+      "answers": {
+        "a": "Orthographic projection",
+        "b": "Axonometric projection",
+        "c": "Oblique projection",
+        "d": "Isometric projection"
+      },
+      "explanations": {
+        "a": "The right answer is (b). Each view of orthographic projection shows only one side of the object. It preserves both distances and angles, but there can be many hidden surfaces that are not clearly visible. While axonometric projection is a type of orthographic projection used for creating a pictorial drawing of an object, where the object is rotated around one or more of its axes relative to the projection plane to reveal multiple sides.",
+        "b": "Correct, the right answer is (b). Axonometric projection is a type of orthographic projection used for creating a pictorial drawing of an object, where the lines of sight are perpendicular to the plane of projection, and the object is rotated around one or more of its axes to reveal multiple sides.",
+        "c": "The right answer is (b). An oblique projection is a drawing in which the observer is considered to be at infinity, and the plane of projection is parallel to the front surface of the object. Axonometric projections are considered more realistic than oblique projections. The horizontal edges of an object in axonometric projections are parallel to each other and inclined to the plane.",
+        "d": "The right answer is (b). While isometric projections maintain the same scale on all axes, this might not always provide the most accurate representation of the object. Axonometric projections, on the other hand, can adjust the scale on different axes, allowing for a more accurate depiction of the true shape and size of the object."
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "To project the auxiliary view, an imaginary plane, known as ------------- is utilized",
+      "answers": {
+        "a": "Reference plane",
+        "b": "Principle plane",
+        "c": "Normal plane",
+        "d": "Inclined plane"
+      },
+      "explanations": {
+        "a": "Correct, the right answer is (a). To project the auxiliary the auxiliary view, an imaginary plane, known as reference plane is placed at the angle which is given the view. Even two views for drawing on which the total details are shown is sufficient. It is easy for drawing.",
+        "b": "The right answer is (a). the term “Principle Plane” refers to the two main planes onto which a three-dimensional object is projected to create its orthographic views. These are usually the Horizontal Plane (HP) and the Vertical Plane (VP).",
+        "c": "The right answer is (a). A “Normal Plane” is a plane that is perpendicular to the direction of projection. This means that the line of sight (or projectors) is perpendicular to this plane.",
+        "d": "The right answer is (a). An “Inclined Plane” refers to a plane that is tilted or slanted, and not perpendicular or parallel to the principal planes (Horizontal Plane and Vertical Plane)."
+      },
+      "correctAnswer": "a",
+      "difficulty": "advanced"
     }
   ]
 }
